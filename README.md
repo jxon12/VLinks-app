@@ -6,13 +6,13 @@ VLinks is a wellness and productivity platform that integrates mental health sup
 
 Affirm – Daily affirmations and healing music for emotional regulation.
 
-Feed – A personalized feed (with translation support planned once AI integration is complete).
+Feed – A personalized feed (translation support planned with AI).
 
 Personal Calendar – Organize schedules and manage tasks.
 
 Gratitude Journal – Record moods and reflections (AI-assisted journaling planned).
 
-Lobby (Gather Integration) – A social hub (API integration with Gather in progress).
+Lobby (Gather Integration) – A social hub (API integration in progress).
 
 Compose – Draft posts (publishing to feed under development).
 
@@ -20,13 +20,27 @@ To-Do – Task tracking (future upgrade: auto-generate VLinks timeline from time
 
 My Account – Profile with MyHealth section (health quiz & insights to be added).
 
-ChatPhone – In-app chat with future Gemini API integration.
+ChatPhone – In-app chat (Gemini API integration planned).
 
-Tarot – Interactive tarot reading (UI ready, logic activation pending).
+Tarot – Interactive tarot reading (UI ready, backend logic pending).
 
-Safety Net – Emergency & mental health support feature (detailed rollout planned).
+Safety Net – See detailed description below.
 
 Gamification – Prototype UI for mini-games (future expansion to real 3D games).
+
+🛡️ Safety Net (Key Feature)
+
+The Safety Net is designed as an emergency support system for users experiencing mental health distress.
+
+🚨 One-Tap Access to crisis hotlines and professional resources.
+
+🧑‍🤝‍🧑 Trusted Contacts integration (notify friends/family if triggered).
+
+📍 Optional Location Sharing for emergencies.
+
+📘 Resource Library with mental health guides and coping strategies.
+
+This feature is currently in planning & design phase, and will be prioritized in upcoming development cycles.
 
 🛠️ Tech Stack
 
@@ -60,7 +74,8 @@ Phase 3 (Advanced Features) – Safety Net launch, gamification with 3D mini-gam
 
 This project is currently deployed via Bolt PWA.
 ⚠️ On some mobile devices, the Bolt watermark may overlap UI elements, but all buttons remain accessible.
-Click here to access the live app : https://ulinks-duplicated-po8g.bolt.host
+
+👉 Click here to access the live app: https://ulinks-duplicated-po8g.bolt.host
 
 👥 Team
 
