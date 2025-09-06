@@ -8,13 +8,12 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      // 你用内联 manifest 也OK（不需要 public/manifest.webmanifest）
       manifest: {
         name: '1112',
         short_name: 'VLINKS',
         description: 'Calm • Focus • Connect',
-        start_url: '/',     // 若部署到子路径要改成 '/子路径/'
-        scope: '/',         // 同上
+        start_url: '/',    
+        scope: '/',         
         display: 'standalone',
         background_color: '#071024',
         theme_color: '#071024',
@@ -25,27 +24,26 @@ export default defineConfig({
         ]
       },
       workbox: {
-        // 构建时要能匹配到你的静态文件
         globPatterns: ['**/*.{js,css,html,ico,png,svg,mp3}'],
 
-        // 让 SPA 的路由在刷新时回退到 index.html（代替你原来对 navigate 的函数判断）
+        
         navigateFallback: 'index.html',
 
-        // 用正则而不是函数来匹配资源
+        
         runtimeCaching: [
-          // 静态资源（脚本/样式/图片/字体）
+         
           {
             urlPattern: /.*\.(?:js|css|png|jpg|jpeg|svg|gif|webp|ico|woff2?)$/i,
             handler: 'StaleWhileRevalidate',
             options: { cacheName: 'assets' }
           },
-          // 你的 BGM mp3（精确文件名）
+          
           {
             urlPattern: /sea-veiw-361392\.mp3$/i,
             handler: 'CacheFirst',
             options: { cacheName: 'media' }
           },
-          // 谷歌字体（如果用到）
+         
           {
             urlPattern: /^https:\/\/fonts\.(?:gstatic|googleapis)\.com\/.*/i,
             handler: 'CacheFirst',
@@ -57,7 +55,7 @@ export default defineConfig({
         ]
       },
 
-      // 开发环境可装PWA（不影响生产）
+    
       devOptions: { enabled: true }
     })
   ]
